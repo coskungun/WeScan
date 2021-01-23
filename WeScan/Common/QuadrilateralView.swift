@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Foundation
 
 /// Simple enum to keep track of the position of the corners of a quadrilateral.
 enum CornerPosition {
@@ -54,7 +55,7 @@ final class QuadrilateralView: UIView {
         }
     }
 
-    /// Set stroke color of image rect and coner.
+    /// Set stroke color of image rect and corner.
     public var strokeColor: CGColor? {
         didSet {
             quadLayer.strokeColor = strokeColor
